@@ -1,0 +1,191 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 40px 100px;
+    z-index: 1;
+
+    .loginbuttons {
+        display: flex;
+        justify-content: end;
+        align-items: center;
+
+        p {
+            margin-bottom: 0;
+            font-size: 15px;
+            font-weight: 500;
+            color: black;
+
+        }
+
+        a {
+            margin-left: 40px;
+            background-color: crimson;
+            color: white;
+            border-radius: 6px;
+            padding: 16px 38px;
+            transition: 0.4s;
+            z-index: 1;
+        }
+    }
+}
+
+.section1 {
+
+    .logintext {
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        background-image: url(https://new.axilthemes.com/demo/template/etrade/assets/images/bg/bg-image-9.jpg);
+        height: 100vh;
+        padding: 200px 50px 0 100px;
+    }
+
+    .logininp {
+        max-width: 450px;
+        width: 100%;
+        padding: 30px;
+        
+        margin-top: 20%;
+        margin-left: 21%;
+
+        .top {
+            h3 {
+                font-weight: 700;
+                font-size: 28px;
+                word-break: break-word;
+                line-height: 1.3;
+                color: #292930;
+            }
+
+            p {
+                font-size: 14px;
+                line-height: 1.65;
+                color: #999FAE;
+                margin: 0 0 30px;
+            }
+        }
+
+        .middle {
+            .imptop {
+                margin-bottom: 35px;
+
+                input {
+                    border-radius: 6px;
+                    height: 50px;
+                    font-size: 14px;
+                    padding: 0 117px;
+                    background-color: #fff;
+                    border: 1px solid #CBD3D9;
+                    color: #777777;
+                    outline: none;
+                }
+            }
+            .impbottom{
+                margin-bottom: 35px;
+                input {
+                    border-radius: 6px;
+                    height: 50px;
+                    font-size: 14px;
+                    padding: 0 117px;
+                    background-color: #fff;
+                    border: 1px solid #CBD3D9;
+                    color: #777777;
+                    outline: none;
+                }
+            }
+
+        }
+
+        .bottom {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            button{
+                background-color: #3577f0;
+                padding: 14px 46px;
+                color: white;
+                border-radius: 6px;
+                font-weight: 700;
+                border: none;
+
+            }
+            a{
+                text-decoration: none;
+            }
+
+        }
+    }
+}
+@media(max-width:576px){
+    .section1{
+        .col-lg-4{
+            display: none;
+        }
+
+    }
+    
+    header .loginbuttons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        
+        
+    }
+    .section1 .logininp {
+        max-width: 450px;
+        width: 100%;
+        padding: 0px;
+        margin-top: 70%;
+        margin-left: 0%;
+        text-align: center;
+    }
+    .section1 .logininp .middle .imptop input {
+        border-radius: 6px;
+        height: 50px;
+        font-size: 14px;
+        padding: 0px 100px;
+        background-color: #fff;
+        border: 1px solid #CBD3D9;
+        color: #777777;
+        outline: none;
+    }
+    
+    .section1 .logininp .middle .impbottom input {
+        border-radius: 6px;
+        height: 50px;
+        font-size: 14px;
+        padding: 0px 100px;
+        background-color: #fff;
+        border: 1px solid #CBD3D9;
+        color: #777777;
+        outline: none;
+    }
+    header .loginbuttons a {
+        margin-left: -16px;
+        background-color: crimson;
+        color: white;
+        border-radius: 6px;
+        padding: 16px 38px;
+        transition: 0.4s;
+        z-index: 1;
+    }
+    header .loginbuttons p {
+        margin-left: -20px;
+        margin-bottom: 10px;
+    }
+    .logo img{
+        margin-bottom: 25px;
+    }
+    .middle{
+        margin-left: 10px;
+    }
+}
